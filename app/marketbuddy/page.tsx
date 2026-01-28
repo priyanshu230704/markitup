@@ -1,8 +1,9 @@
 import { Metadata } from "next";
 import MarketBuddyClient from "./MarketBuddyClient";
 
-// Explicitly force static generation - this ensures Vercel treats this as a static page
+// Force static generation with multiple explicit hints for Vercel
 export const dynamic = "force-static";
+export const revalidate = false; // Never revalidate, pure static
 
 export const metadata: Metadata = {
     title: "MarketBuddy - Your Personal Brand Growth Engine",

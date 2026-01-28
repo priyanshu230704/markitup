@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
@@ -11,32 +10,6 @@ import Footer from "./components/Footer";
 import { Reveal } from "@/components/Reveal";
 
 export default function MarketBuddyClient() {
-    const [isMounted, setIsMounted] = useState(false);
-
-    useEffect(() => {
-        setIsMounted(true);
-    }, []);
-
-    // During SSR and initial hydration, render a loading shell
-    // This ensures meaningful HTML is prerendered for SEO
-    if (!isMounted) {
-        return (
-            <main className="min-h-screen bg-background text-foreground">
-                <div className="h-16 bg-background" /> {/* Navbar placeholder */}
-                <section className="min-h-screen flex items-center justify-center">
-                    <div className="text-center">
-                        <h1 className="text-4xl md:text-6xl font-bold mb-4">
-                            MarketBuddy
-                        </h1>
-                        <p className="text-xl text-muted-foreground">
-                            Your Personal Brand Growth Engine
-                        </p>
-                    </div>
-                </section>
-            </main>
-        );
-    }
-
     return (
         <main className="min-h-screen bg-background text-foreground">
             <Navbar />
