@@ -50,7 +50,6 @@ h5,
 h6,
 .font-heading {
   font-family: var(--font-jost);
-  color: var(--foreground);
 }
 
 .font-handwriting {

@@ -3,10 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
-import Portfolio from "./components/Portfolio";
-import Testimonials from "./components/Testimonials";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Footer from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
 
 export default function MarketBuddyClient() {
@@ -18,10 +15,6 @@ export default function MarketBuddyClient() {
 
             <Services />
 
-            <Portfolio />
-
-            <Testimonials />
-
             <section className="py-24 bg-white dark:bg-zinc-950">
                 <div className="container mx-auto px-6 text-center">
                     <Reveal>
@@ -31,8 +24,6 @@ export default function MarketBuddyClient() {
                     </Reveal>
                 </div>
             </section>
-
-            <Contact />
 
             <Footer />
         </main>

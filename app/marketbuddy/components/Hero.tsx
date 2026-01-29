@@ -8,14 +8,14 @@ import Image from "next/image";
 
 export default function Hero() {
     return (
-        <section className="relative pt-32 pb-20 overflow-hidden">
+        <section className="relative pt-24 pb-20 overflow-hidden">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-primary/5 blur-[120px] rounded-full" />
 
             <div className="container mx-auto px-6 relative z-10">
                 <Reveal>
                     <Link
                         href="/"
-                        className="inline-flex items-center gap-2 text-primary font-medium mb-12 hover:gap-3 transition-all"
+                        className="inline-flex items-center gap-2 text-primary font-medium mb-8 hover:gap-3 transition-all"
                     >
                         <FiArrowLeft /> Back to Ecosystem
                     </Link>
